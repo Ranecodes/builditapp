@@ -4,8 +4,20 @@ import home2 from "../assets/images/house2.png"
 import home3 from "../assets/images/house3.png"
 import home4 from "../assets/images/house4.png"
 import home5 from "../assets/images/house5.png"
+import { useNavigate } from 'react-router-dom'
 
 function Home() {
+  const navigate = useNavigate();
+
+  const goToAbout = () => {
+    navigate('/about');
+  }
+
+  const goToProject= () => {
+    navigate('/projects');
+  }
+
+
   return (
     <main>
     <section className="home-container">
@@ -15,8 +27,8 @@ function Home() {
         <h1 className="home-content-text-h1">Development <br/>company</h1>
         <p className="home-content-text-p">Forward-thinking real estate developer, owner <br/> and investor with a reputation</p>
         <div className="light-dark-bar">
-          <button className="project-btn">Services</button>
-          <button className="project-btn-2">About the company</button>
+          <button className="project-btn" onClick={goToProject}>Services</button>
+          <button className="project-btn-2" onClick={goToAbout}>About the company</button>
         </div>
       </div>
       <div className="home-content-image">

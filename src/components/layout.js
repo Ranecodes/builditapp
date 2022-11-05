@@ -1,7 +1,12 @@
 import { NavLink } from "react-router-dom";
-// import companyLogo from '../assets/images/logo.svg' to import an image
+import { useAuth } from "../context/auth";
+
 
 export default function Layout() {
+  const auth = useAuth();
+
+
+
   return (
   
     <div className="main-header">
@@ -22,8 +27,12 @@ export default function Layout() {
           About
         </NavLink>
         <NavLink to="/projects" className="link">Projects</NavLink>
+        <NavLink to="/profile" className="link">Profile</NavLink>
+        
+
         </div>
-      <button className="project-btn">Need a project?</button>
+      {/* <button className="project-btn">Need a project?</button> */}
+      {!auth.user && <NavLink to="/login" className="project-btn">Login</NavLink>}
       </nav>
     </header>
    </div>

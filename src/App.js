@@ -10,6 +10,10 @@ import Layout from "./components/layout";
 import AboutHistory from "./components/aboutHistory";
 import AboutServices from "./components/aboutService";
 import { Projects } from "./components/projects";
+import { Profile } from "./components/profile";
+import { AuthProvider } from "./context/auth";
+import { Login } from "./components/login";
+import { RequireAuth } from "./context/requireAuth";
 
 class ErrorBoundary extends React.Component {
   constructor(props) {
@@ -21,8 +25,7 @@ class ErrorBoundary extends React.Component {
     return { hasError: true };
   }
 
-  componentDidCatch(error, errorInfo) {
-  }
+  componentDidCatch(error, errorInfo) {}
 
   render() {
     if (this.state.hasError) {
@@ -33,26 +36,27 @@ class ErrorBoundary extends React.Component {
   }
 }
 function App() {
-  //test
-  
   return (
-    <section className="main-container">
-      <ErrorBoundary>
-        <Layout />
+    <AuthProvider>
+      <section className="main-container">
+        <ErrorBoundary>
+          <Layout />
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/users" element={<Users />} />
-          <Route path="/about" element={<About />}>
-            {/* <Route path=":aboutId" element={<AboutRandom/>} /> */}
-            <Route path="history" element={<AboutHistory/>} />
-            <Route path="services" element={<AboutServices/>} />
-          </Route>
-          <Route path="/projects" element={<Projects/>} />
-          <Route path="*" element={<ErrorPage />} />
-        </Routes>
-      </ErrorBoundary>
-    </section>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/users" element={<Users />} />
+            <Route path="/about" element={<About />}>
+              <Route path="history" element={<AboutHistory />} />
+              <Route path="services" element={<AboutServices />} />
+            </Route>
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/profile" element={<RequireAuth><Profile /></RequireAuth> } />
+            <Route path="/login" element={<Login/>}/>
+            <Route path="*" element={<ErrorPage />} />
+          </Routes>
+        </ErrorBoundary>
+      </section>
+    </AuthProvider>
   );
 }
 
