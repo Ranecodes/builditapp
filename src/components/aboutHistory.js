@@ -1,4 +1,5 @@
 import about1 from "../assets/images/about1.png";
+import about2 from "../assets/images/about2.png";
 import { React, useState } from "react";
 import useFetch from "../useFetch";
 
@@ -31,19 +32,17 @@ export default function AboutHistory() {
           </h1>
           <h2>Owner and investor with a reputation</h2>
           <p style={{ color: "#486A6F" }}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            <br /> Nunc elit sem, vestibulum sed leo eu, malesuada pharetra
-            mauris.
-            <br /> Integer rhoncus, eros vel euismod tempor, ipsum magna
-            tristique nisi,
-            <br /> quis ullamcorper enim magna eu orci.
-            <br /> Sed semper ex quis semper aliquet. Cras hendrerit molestie
-            sapien sed fermentum.
-            <br /> Mauris dui tortor, viverra vel ultrices in, congue sed ex.
+            Buildit is a construction company that has been in business for over
+            <br /> 20 years. We have a reputation for quality work and
+            <br /> professionalism. We are a family owned and operated business
+            <br /> that has been serving the community for over 20 years.
+            <br /> We are a family owned and operated business that has been
+            <br /> serving the community for over 20 years.
           </p>
         </div>
         <div>
           <img src={about1} alt="" className="about1" />
+          <img src={about2} className="about2"/>
         </div>
       </div>
 
