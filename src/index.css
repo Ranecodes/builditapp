@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+;
 body {
   margin: 0;
   padding: 0;
@@ -443,22 +444,42 @@ background-position: 100% 35%; */
    /* Login Page */
 .login-container{
   background: linear-gradient(42.43deg, #C6DBFF 0%, #E1EBFA 52.25%);
+  animation-name: background-animation;
+  animation-duration: 4s;
 }
+/* 
+@keyframes background-animation{
+  0%{
+    background: linear-gradient(42.43deg, #C6DBFF 0%, #E1EBFA 52.25%);
+  }
+  25%{
+    background: linear-gradient(42.43deg, #C6DBFF 0%, #d1e3ff 52.25%);
+  }
+  50%{
+    background: linear-gradient(42.43deg, #C6DBFF 0%, #c7ddff 52.25%);
+  }
+  75%{
+    background: linear-gradient(42.43deg, #C6DBFF 0%, #b8d4ff 52.25%);
+  }
+  100%{
+    background: linear-gradient(42.43deg, #C6DBFF 0%, #E1EBFA 52.25%);
+  }
+} */
+
 
 .login-content-container{
   display: flex;
-  align-items: center;
-  background: #F4F7FF;
-  width: fit-content;
-  padding: 50px;
-  margin-left: 50px;
-  border-radius: 10px;
 }
 
 .login-content-form {
+  background: #F4F7FF;
+  padding: 50px;
   display: flex;
   flex-direction: column;
   width: 400px;
+  margin-left: 50px;
+  border-radius: 10px;
+  filter: drop-shadow(0px 30px 60px rgba(59, 130, 246, 0.25))
 }
 
 .login-content-form input{
@@ -466,7 +487,7 @@ background-position: 100% 35%; */
   border-right-style: hidden;
   border-left-style: hidden;
   border-bottom-style: groove;
-  background-color: #eee;
+  background-color: #FFFFFF;
   padding: 10px;
   font-size: 20px
 }
@@ -474,3 +495,40 @@ background-position: 100% 35%; */
 .checkbox{
   padding: 10px 0;
 }
+
+.login-content-text{
+  text-align: center;
+  margin-left: 300px;
+  font-size: 42px;
+  line-height: 1.0;
+  color: #7cacff;
+  
+}
+.login-content-text h1{
+  position: relative;
+  animation: fadeIn 3s infinite;
+}
+
+@keyframes fadeIn{
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+  from{left: 10px}
+  to{left: 0px}
+  from{color: #273a3d;}
+  to{color: #7cacff;}
+}
+
+/* .anim-1{
+  animation: pleasemove 1s infinite;
+}
+.anim-2{
+  animation-delay: 1s;
+}
+.anim-3{
+  animation-delay: 1.5s;
+}
+.anim-4{
+  animation-delay: 2s;
+} */
+
+
