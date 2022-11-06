@@ -10,11 +10,11 @@ export const Profile = () => {
         navigate('/')
     }
   return (
-    <>
-      <div className="profile">
-        Welcome {auth.user}
-        </div>
-      <button onClick={handleLogout}>Log Out</button>
-    </>
+    <section className="profile-container">
+      <div className="profile-main-text">
+        Welcome {auth.user} . You are logged in!
+      </div>
+      <button onClick={handleLogout} className="profile-btn">Log Out</button>
+    </section>
   );
 }

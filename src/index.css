@@ -163,9 +163,47 @@ background-position: 100% 35%; */
 
 /* Features container */
 .features-container{
-  background-color: white;
+  background-color: #F4F7FF;
   position:relative;
   z-index: 2;
+}
+
+.features-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 60px;
+}
+
+.features-content-H1{
+  color: #486A6F;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.features-content-cards{
+  display: flex;
+  justify-content: center;
+  color: #486A6F;
+  gap:0 90px;
+  
+}
+
+.features-content-card{
+  filter: drop-shadow(0px 30px 60px rgba(25, 55, 102, 0.25));
+}
+
+.features-content-card p{
+  font-weight: 400;
+  font-size: 16px;
+}
+.features-content-card-svg{
+  background: #678C92;
+  padding: 20px;
+  border-radius: 5px;
+  filter: drop-shadow(0px 30px 60px rgba(25, 55, 102, 0.25));
 }
 
 .light-dark-bar{
@@ -518,17 +556,64 @@ background-position: 100% 35%; */
   to{color: #7cacff;}
 }
 
-/* .anim-1{
-  animation: pleasemove 1s infinite;
+  /* Profile Page */
+.profile-container{
+  font-family: "Noto Sans", sans-serif;
+  background: linear-gradient(42.43deg, #C6DBFF 0%, #E1EBFA 52.25%);
+  padding-top: 20px;
+  position: relative;
 }
-.anim-2{
-  animation-delay: 1s;
-}
-.anim-3{
-  animation-delay: 1.5s;
-}
-.anim-4{
-  animation-delay: 2s;
-} */
 
+.profile-main-text{
+  text-align: center;
+  margin-top: 150px;
+  font-size: 60px;
+  font-weight: 700;
+  color: #273a3d;
+  overflow: hidden;
+  width: 0;
+  white-space: nowrap;
+  border-right:.15em solid #9eb5de;
+  animation: typing 1s steps(20, end) forwards, blink .8s infinite;
+}
 
+@keyframes typing{
+  from{width:0%;}
+  to{width:100%;}
+}
+
+@keyframes blink {
+  from { border-color: transparent }
+  to { border-color: #9eb5de; }
+}
+
+.profile-btn{
+  text-align: center;
+  position:absolute;
+  right: 50%;
+  margin-top:40px;
+  color:white;
+  background: #4397A4;
+  border-radius: 5px;
+  padding: 11px 20px;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+    /* Projects Page */
+project-hero-container{
+  background: linear-gradient(42.43deg, #C6DBFF 0%, #E1EBFA 52.25%);
+  padding-top: 0.5px;
+  position: relative;
+}
+
+.project-hero-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 150px;
+}

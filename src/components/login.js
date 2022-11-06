@@ -66,7 +66,7 @@ export const Login = () => {
           <h1 style={{opacity: "0.8"}} className="anim-2">And</h1>
           <h1 style={{opacity: "0.8"}} className="anim-3">Investor</h1>
           <h1 style={{opacity: "0.8"}} className="anim-4">With</h1>
-          <h1 style={{opacity: "0.8"}} className="anim-5">A Repuation</h1>
+          <h1 style={{opacity: "0.8"}} className="anim-5">A Reputation</h1>
         </div>
       </div>
     </section>
