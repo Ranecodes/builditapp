@@ -3,7 +3,6 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import "./index.css";
 import Home from "./components/home";
-import Users from "./components/users";
 import About from "./components/about";
 import ErrorPage from "./components/errorPage";
 import Layout from "./components/layout";
@@ -14,6 +13,7 @@ import { Profile } from "./components/profile";
 import { AuthProvider } from "./context/auth";
 import { Login } from "./components/login";
 import { RequireAuth } from "./context/requireAuth";
+import Contact from "./components/contact";
 
 class ErrorBoundary extends React.Component {
   constructor(props) {
@@ -44,7 +44,7 @@ function App() {
 
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/users" element={<Users />} />
+            <Route path="/contact-us" element={<Contact />} />
             <Route path="/about" element={<About />}>
               <Route path="history" element={<AboutHistory />} />
               <Route path="services" element={<AboutServices />} />

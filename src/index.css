@@ -293,7 +293,6 @@ background-position: 100% 35%; */
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: 20px 30px; */
 }
 
 .about-title{
@@ -303,8 +302,11 @@ background-position: 100% 35%; */
 }
 
 .aboutHistoryContainer{
-  display: flex;
   margin-top: 50px;
+}
+
+.aboutHistory-top{
+  display: flex;
 }
 
 .about-content-text{
@@ -313,4 +315,162 @@ background-position: 100% 35%; */
 
 .about1{
   margin: 50px;
+}
+
+   /* Contact Page */
+.contact-container{
+  background: linear-gradient(42.43deg, #C6DBFF 0%, #E1EBFA 52.25%);
+  padding-top: 20px;
+  position: relative;
+}
+
+.contact-content-container{
+  display: flex;
+}
+
+.contact-content-text{
+  margin-left: 120px;
+}
+
+.contact-icon{
+  background: #E1EBFA;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.contact-form{
+  color: #486A6F;
+}
+
+.contact-icon-special{
+  background: #E1EBFA;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.contact-column{
+  margin-top: 100px;
+  line-height: 30px;
+}
+
+.contact-column-card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+}
+
+.card-details{
+  display: flex;
+  flex-direction: column; 
+  margin: 10px 30px;
+  line-height: 1;
+}
+
+.contact-content-form{
+  display: flex;
+  height: 400px;
+  margin-top: 30px;
+  position: relative;
+  margin-left: 450px;
+  background: linear-gradient(42.43deg, #C6DBFF 0%, #E1EBFA 52.25%);
+  filter: drop-shadow(0px 30px 60px rgba(59, 130, 246, 0.25));
+  border-radius: 5px;
+  padding: 50px;
+}
+
+.form-group input, textarea, label{
+  display: block;
+  background: transparent
+}
+
+.form-group textarea{
+  width: 98%;
+}
+
+.form-group input, textarea{
+  border: 1px solid #486A6F;
+}
+
+.form-group-1 input{
+  padding: 10px;
+}
+
+.form-group-2 input{
+  padding: 10px;
+  width: 94%;
+}
+
+.form-group{
+  padding: 20px 0;
+}
+
+  /* Contact Us Footer */
+.footer-container{
+  background: #486A6F;
+  width: 100%;
+  position: absolute;
+}
+
+.footer-grid-container{
+  padding: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+  color: #F4F7FF;
+}
+
+.footer-grid-item-2{
+  padding-top: 10px;
+  line-height: 26px;
+}
+
+.footer-icon{
+  background:#678C92;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.footer-grid-item-3{
+  cursor: pointer;
+}
+
+.footer-grid-item-3, .footer-grid-item-4{
+  padding-top: 10px;
+  line-height: 26px;
+}
+
+   /* Login Page */
+.login-container{
+  background: linear-gradient(42.43deg, #C6DBFF 0%, #E1EBFA 52.25%);
+}
+
+.login-content-container{
+  display: flex;
+  align-items: center;
+  background: #F4F7FF;
+  width: fit-content;
+  padding: 50px;
+  margin-left: 50px;
+  border-radius: 10px;
+}
+
+.login-content-form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.login-content-form input{
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  background-color: #eee;
+  padding: 10px;
+  font-size: 20px
+}
+
+.checkbox{
+  padding: 10px 0;
 }
