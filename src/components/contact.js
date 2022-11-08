@@ -159,7 +159,7 @@ export default function Contact() {
                 </div>
                 <div
                   className="form-group form-group-1"
-                  style={{ float: "left" }}
+                  style={{ float: "right" }}
                 >
                   <label for="email">Email</label>
                   <input type="email" id="email" name="email" />
