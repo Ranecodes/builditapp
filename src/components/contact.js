@@ -152,14 +152,13 @@ export default function Contact() {
               <form className="contact-form">
                 <div
                   className="form-group form-group-1"
-                  style={{ float: "left", marginRight: "20px" }}
+                  style={{  marginRight: "20px" }}
                 >
                   <label for="name">Name</label>
                   <input type="text" id="name" name="name" />
                 </div>
                 <div
                   className="form-group form-group-1"
-                  style={{ float: "right" }}
                 >
                   <label for="email">Email</label>
                   <input type="email" id="email" name="email" />
