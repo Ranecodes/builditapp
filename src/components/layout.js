@@ -23,7 +23,7 @@ export default function Layout() {
           <h1 className="logo-text">Buildit</h1>
         </div>
         <nav className="navBar">
-          <div className={navbarOpen ? "links" : "hideMenu"}>
+          <div className={navbarOpen ? "hideMenu" : "links"}>
             <NavLink to="/" end className="link" onClick={() => closeMenu()}>
               Home
             </NavLink>
