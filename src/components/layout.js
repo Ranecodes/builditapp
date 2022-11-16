@@ -21,9 +21,10 @@ export default function Layout() {
         <div className="logo">
           <div className="company-logo"></div>
           <h1 className="logo-text">Buildit</h1>
+          
         </div>
         <nav className="navBar">
-          <div className={navbarOpen ? "hideMenu" : "links"}>
+          <div className={navbarOpen ? "links" : "hideMenu"}>
             <NavLink to="/" end className="link" onClick={() => closeMenu()}>
               Home
             </NavLink>
@@ -39,12 +40,13 @@ export default function Layout() {
             <NavLink to="/contact-us" className="link" onClick={() => closeMenu()}>
               Contact Us
             </NavLink>
+            {!auth.user && (
+              <NavLink to="/login" className="project-btn links-2">
+                Login
+              </NavLink>
+            )}
           </div>
-          {!auth.user && (
-            <NavLink to="/login" className="project-btn links-2">
-              Login
-            </NavLink>
-          )}
+          
           <button className="toggle-btn" onClick={handleToggle}>
             {" "}
             {navbarOpen ? (
